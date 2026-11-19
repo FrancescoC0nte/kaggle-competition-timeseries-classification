@@ -8,6 +8,8 @@ This project focuses on time series classification using deep learning technique
 
 The dataset contains 661 time series, each consisting of 160 consecutive timestamps described by 38 heterogeneous features. The project addresses several challenges in this setting, including class imbalance, feature selection, temporal windowing, and the sensitivity of model performance to the training/validation split.
 
+During the competition, only half of the test set was made available for evaluation. This allowed us to assess our models on a partial test set throughout the competition, while the final ranking was determined using the complete test set.
+
 The work explores different neural architectures, starting from recurrent models such as GRUs and LSTMs and progressing to models combining convolutional and attention mechanisms. The main objective was to identify an effective architecture while maintaining robust generalization across different data partitions.
 
 The complete description of the methodology, experiments, and results is available in the [project report](Project%20Report.pdf). This README provides a concise overview of the implementation choices and the main findings.
@@ -78,7 +80,9 @@ The best-performing model was the BaggedGRU, which achieved an F1 score of **95.
 | BaggedGRU | **95.70%** |
 | AttentionCNNLSTM | 87.10% |
 
-The BaggedGRU provided a small but consistent improvement over the single GRU, suggesting that ensembling helped reduce the dependence on a specific data partition. In contrast, the more complex architecture did not improve performance in these experiments.
+The BaggedGRU provided a small but consistent improvement over the single GRU on the initially available test set, suggesting that ensembling helped reduce the dependence on a specific data partition. However, its performance improved further when evaluated on the complete test set, achieving an F1 score of **0.9618**. This result placed our team **17th out of 193 participating teams** in the competition.
+
+In contrast, the more complex AttentionCNNLSTM architecture did not improve performance in our experiments, suggesting that the simpler recurrent architecture combined with ensembling was better suited to this classification task.
 
 ## Possible improvements
 
