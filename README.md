@@ -1,6 +1,7 @@
 # Timeseries Classification of Pain Levels from simulated sensor data
 
-Project for the AN2DL First Challenge
+This project was developed as part of the Artificial Neural Networks and Deep Learning course at Politecnico di Milano (A.Y. 2025–2026), within a Kaggle-based challenge organized for the course participants.
+
 
 ## What this is about
 
@@ -27,7 +28,8 @@ The repository is organized as follows:
 └── README.md
 ```
 
-The source code is available in the [`Code/`](Code/) directory.
+The source code is available in the [`Code/`](Code/) directory. The dataset is not included in this repository due to the original licensing conditions.
+
 
 ## Challenges and Methodology
 
