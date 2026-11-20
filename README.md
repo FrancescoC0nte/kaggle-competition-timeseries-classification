@@ -20,9 +20,9 @@ The repository is organized as follows:
 ```text
 .
 ├── Code/                        # Model implementations and analysis scripts
-    ├── AttentionCNNLSTM.ipynb
-    ├── BaggedGRU.ipynb
-    └── GRU.ipynb
+│    ├── AttentionCNNLSTM.ipynb
+│    ├── BaggedGRU.ipynb
+│    └── GRU.ipynb
 ├── Project Report.pdf           # Report for the AN2DL First Challenge
 └── README.md
 ```
