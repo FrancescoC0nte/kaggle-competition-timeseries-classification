@@ -1,6 +1,6 @@
 # Timeseries Classification of Pain Levels from simulated sensor data
 
-Project for the AN2DL First Challenge — Ottima ANNata
+Project for the AN2DL First Challenge
 
 ## What this is about
 
